@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 to-purple-900 text-white cursor-default items-center justify-center">
+    <!-- login form input -->
+    <div
+        class="flex justify-center items-center min-h-screen box-border text-2xl mr-14 border-[#1d0b5e] rounded-xl h-300px">
+
+
+        <form action=""
+            class="w-600 h-1000 py-3 px-5 my-2 box-border border-2 border-slate-400 rounded-xl bg-pink-450 text-white">
+            <form action=""
+                class="box-content h-800 w-600 border-2 border-slate-400 rounded-xl bg-[#c9a1f0] text-white">
+                <h1 class="font-bold">Organise Your Life With Us!</h1>
+                <div class="label">
+                    <label for="first">First Name <br></label>
+                    <input type="text" id="fname" name="firstname" placeholder="firstname"
+                        class="border-2 border-slate-400 rounded-sm hover:cursor-text placeholder:italic placeholder:text-slate-400 placeholder: bg-slate-200  placeholder:px-3"><br>
+                    <label for="last"> Last Name <br></label>
+                    <input type="text" id="lname" name="firstname" placeholder="lastname"
+                        class="border-2 border-slate-400 rounded-sm hover:cursor-text placeholder:italic placeholder:text-slate-400 placeholder: bg-slate-200  placeholder:px-3"><br>
+
+                </div>
+                <div>
+                    Select a Category:
+                    <div>
+                        <input type="radio" name="event" id="Hackathon" class="hover:cursor-pointer">
+                        <label for="Hackathon">Daily Tracker</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" name="event" id="sports" class="hover:cursor-pointer">
+                        <label for="sports">Monthly Tracker</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" name="event" id="entertainment" class="hover:cursor-pointer">
+                        <label for="entertainment">Yearly Tracker</label>
+                    </div>
+                    <div>
+                        <label for="email"> Email <br></label>
+                        <input type="email" name="email" id="email" placeholder="email"
+                            class="border-2 border-slate-400 rounded-sm hover:cursor-text placeholder:italic placeholder:text-slate-400 placeholder: bg-slate-200 placeholder:px-3">
+                    </div>
+                    <!-- <div>
+                        <label for="date">Slot:</label><br>
+                        <input id="date" name="date" type="datetime-local"
+                            class="border-2 border-slate-400 rounded-sm bg-slate-200 hover:cursor-text" />
+                    </div> -->
+                    <div>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="text" id="call" name="call" placeholder="+91 XXXXXXXXXX"
+                            class="border-2 border-slate-400 rounded-sm hover:cursor-text placeholder:italic placeholder:text-slate-400 placeholder: bg-slate-200 placeholder:px-3">
+                    </div>
+                    <button
+                        class="border px-2 py-2 bg-gray-400 text-white w-190px h-30px rounded-xl mx-2 my-2">Register</button>
+
+            </form>
+
+</body>
+
+</html>

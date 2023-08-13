@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- total attachments:
+1. tailwind,css file
+2. register/login file
+3. daily planner-todo list
+4. monthly planner-present day date month year 
+5. back to top button in scroll.js file
+6.the webpage is responsive and functional,cards are included w hover effects
+and hamburger menu expands as sidebar -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 to-purple-900">
+
+    <div class="sidebar sidebarGo">
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a> </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hamburger">
+        <img src="hamburger-menu-icon-png-9.jpg" alt="" class="ham" width="23">
+
+        <img src="cross-png-29390.png" alt="" class="cross" width="23">
+    </div>
+
+    <!-- planner details -->
+
+    <div class="flex justify-evenly items-center">
+        <div class="text-6xl flex font-black text-white leading-normal items-center py-80 px-40 hover:cursor-default">
+            See Yourself Transform
+
+        </div>
+        <div class="text-3xl font-semibold items-center invisible md:visible hover:cursor-default text-white">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores hic modi delectus commodi voluptate
+            placeat nesciunt, ratione, expedita dolore dignissimos et optio earum quis maxime voluptatibus? Sed aperiam
+            nihil sit?
+
+        </div>
+    </div>
+
+    <!-- event cards -->
+
+    <div class="flex flex-col min-h-screen items-center justify-center md:flex-row">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+            <div
+                class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                <!-- 1. group is same as using child selector in css, basically group is used to say that we want same properties on this div as the parent class
+                2. overflow hidden means the content will get cut off if it goes out of specified bounds, in this case image will fit the dimensions and extra will be hidden -->
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                        src="https://images.unsplash.com/photo-1644946959578-8ec8db9cc98b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="" />
+                    <!-- 1. If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+                        2. scale is used to change the size of image, in this case it zooms in on the image when its hovered over -->
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                </div>
+                <div
+                    class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h1 class="font-dmserif text-3xl font-bold text-white">Daily Planner</h1>
+                    <p
+                        class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                    <button
+                        class="rounded-full bg-neutral-900 px-3.5 py-2 font-com text-sm capitalize text-white shadow shadow-black/60">
+                        <a href="week3.html" class="hover:text-cyan-200">See More</a></button>
+                </div>
+            </div>
+            <div
+                class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                        src="https://images.unsplash.com/photo-1642618717985-a681a41d04bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=418&q=80"
+                        alt="" />
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                </div>
+                <div
+                    class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h1 class="font-dmserif text-3xl font-bold text-white">Monthly Goals</h1>
+                    <p
+                        class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                    <button
+                        class="rounded-full bg-neutral-900 px-3.5 py-2 font-com text-sm capitalize text-white shadow shadow-black/60">
+                        <a href="month.html" class="hover:text-cyan-200">See More</a></button>
+                </div>
+            </div>
+            <div
+                class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                        src="https://images.unsplash.com/photo-1541140911322-98afe66ea6da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                        alt="" />
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                </div>
+                <div
+                    class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h1 class="font-dmserif text-3xl font-bold text-white">Yearly Goals</h1>
+                    <p
+                        class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                    <button
+                        class="rounded-full bg-neutral-900 px-3.5 py-2 font-com text-sm capitalize text-white shadow shadow-black/60">
+                        <a href="#" class="hover:text-cyan-200">See More</a></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="top">
+        <button onclick="topFunction()" id="myBtn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="scroll.js"></script>
+
+</body>
+
+</html>
